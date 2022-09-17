@@ -5,7 +5,7 @@ import HomeDashboard from "./layouts/HomeDashboard";
 import AuthDashboard from "./layouts/AuthDashboard";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(true);
+  const [isAuth, setIsAuth] = useState(false);
 
   return (
     <div className="App">

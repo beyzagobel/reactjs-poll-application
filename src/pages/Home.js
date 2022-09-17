@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Header } from "semantic-ui-react";
 import image from "../img/white.jpg";
 import "../css/Home.css";
+import HomeNavbar from "../layouts/HomeNavbar";
 
 export default function Home() {
   return (

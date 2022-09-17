@@ -1,0 +1,10 @@
+.ui.olive.piled.segment{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: left;
+}
+
+.ui.olive.segment:not(.inverted){
+    border-top: 4px solid #b5cc18!important ;
+}

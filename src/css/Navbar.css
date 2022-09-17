@@ -1,0 +1,8 @@
+.container{
+    font-size: 15px;
+}
+
+.ui.inverted.menu{
+    border-bottom: 2px;
+    border-bottom: 1px solid white;
+}

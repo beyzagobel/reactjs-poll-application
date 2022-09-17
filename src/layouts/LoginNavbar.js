@@ -1,19 +1,17 @@
 import React from "react";
 import { Menu, Container } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 export default function LoginNavbar() {
+  function handleLogin() {}
   return (
-    <div>
-      <Menu inverted size="massive">
-        <Container className="container">
-          <Menu.Menu position="right">
-            <Menu.Item>
-              <Link to="/signup">Create a poll</Link>
-            </Menu.Item>
-          </Menu.Menu>
-        </Container>
-      </Menu>
+    <div className="ui secondary  menu">
+      <div className="right menu">
+        <span style={{ margin: "10px" }}>Don't have an account yet ?</span>
+        <a className="ui item active">
+          <Link to="/signup">Sign up</Link>
+        </a>
+      </div>
     </div>
   );
 }

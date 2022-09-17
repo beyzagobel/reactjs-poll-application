@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Dropdown, Menu, Container } from "semantic-ui-react";
 import "../css/Navbar.css";
 
-function Navbar() {
+function HomeNavbar() {
   const [activeItem, setActiveItem] = useState();
 
   const handleItemClick = (e, { name }) => {
@@ -15,16 +15,16 @@ function Navbar() {
   return (
     <Menu inverted size="massive">
       <Container className="container">
-        <Menu.Item active={activeItem === "home"} onClick={handleItemClick}>
+        <Menu.Item active={activeItem === "Home"} onClick={handleItemClick}>
           <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item
-          active={activeItem === "create a poll"}
+          active={activeItem === "Create a poll"}
           onClick={handleItemClick}
         >
           <Link to="/create">Create a poll</Link>
         </Menu.Item>
-        <Menu.Item active={activeItem === "polls"} onClick={handleItemClick}>
+        <Menu.Item active={activeItem === "Polls"} onClick={handleItemClick}>
           <Link to="/polls">Polls</Link>
         </Menu.Item>
 
@@ -32,7 +32,7 @@ function Navbar() {
           <Dropdown
             item
             text="Beyza Göbel"
-            active={activeItem === "dashboadr"}
+            active={activeItem === "dashboard"}
             onClick={handleItemClick}
           >
             <Dropdown.Menu>
@@ -46,4 +46,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default HomeNavbar;

@@ -1,0 +1,10 @@
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+
+}

@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Container } from "semantic-ui-react";
 import "./App.css";
-import MainDashboard from "./layouts/MainDashboard";
+import HomeDashboard from "./layouts/HomeDashboard";
+import AuthDashboard from "./layouts/AuthDashboard";
 
 function App() {
+  const [isAuth, setIsAuth] = useState(true);
+
   return (
     <div className="App">
-      <MainDashboard />
+      {isAuth === true ? <HomeDashboard /> : <AuthDashboard />}
     </div>
   );
 }

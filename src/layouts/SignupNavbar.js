@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/SignupNavbar.css";
 
 export default function AuthNavbar() {
   return (

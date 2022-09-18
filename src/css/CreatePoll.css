@@ -2,13 +2,59 @@
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    background-color: #282B33;
 }
 
 .ui.olive.segment:not(.inverted){
-    border-top: 4px solid #b5cc18!important ;
+    border-top: 4px solid #B15DFF!important ;
+    padding: 30px;
+
 }
 
 .ui.section.divider{
     margin-top: 0px;
     margin-bottom: 1 rem;
 }
+
+
+.createPollContainer{
+    width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 100%;
+	margin-top: 50px;
+}
+
+.ui.inverted.form input[type=text]{
+    background-color: #374151;
+    color: white;
+    border-color:#374151 ;
+
+   
+}
+.ui.inverted.form input[type=text]:focus {
+    border: 1px solid #B15DFF;
+  }
+
+  .ui.button.createPoll{
+    background-color: #03DAC6;
+    color: white;
+  }
+
+
+  .ui.button.x{
+    background-color: #374151;
+    color: white;
+    margin: initial;  
+  }
+
+
+  .ui.icon.input.create{
+    border :1px solid rgba(34,36,38,.15);
+    border-color:rgba(255,255,255,.1) ;
+    margin: 10px 0;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 1px;
+  }

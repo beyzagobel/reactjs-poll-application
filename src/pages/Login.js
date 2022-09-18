@@ -11,10 +11,10 @@ export default function Login() {
         <div className="signup">
           <h1>Sign up</h1>
         </div>
-        <div class="ui olive left aligned raised segment">
+        <div class="ui  left aligned  inverted segment">
           <div className="ui two column very relaxed grid">
             <div className="column">
-              <form class="ui form">
+              <form class="ui inverted form">
                 <div class="field">
                   <label>First Name</label>
                   <input

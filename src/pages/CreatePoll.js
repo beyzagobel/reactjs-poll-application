@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "semantic-ui-react";
 import "../css/CreatePoll.css";
 
 export default function CreatePoll() {
@@ -17,9 +16,9 @@ export default function CreatePoll() {
   };
 
   return (
-    <Container>
-      <div className="ui olive stacked left aligned raised segment">
-        <form className="ui form">
+    <div className="createPollContainer">
+      <div className="ui olive stacked left aligned segment">
+        <form className="ui inverted form">
           <div className="field">
             <label>Title</label>
             <input
@@ -34,7 +33,7 @@ export default function CreatePoll() {
             {counter > 1 ? (
               Array.from(Array(counter)).map((c, index) => {
                 return (
-                  <div className="ui icon input" key={index}>
+                  <div className="ui icon input create" key={index}>
                     <input
                       type="text"
                       required
@@ -43,7 +42,7 @@ export default function CreatePoll() {
                     />
 
                     <button
-                      className="ui basic button"
+                      className="ui button x"
                       onClick={handleRemoveAnswerOption}
                     >
                       <i className="x icon"></i>
@@ -69,9 +68,9 @@ export default function CreatePoll() {
           </button>
           <div class="ui section divider"></div>
 
-          <button className="ui green button">Create poll</button>
+          <button className="ui fluid button createPoll">Create poll</button>
         </form>
       </div>
-    </Container>
+    </div>
   );
 }

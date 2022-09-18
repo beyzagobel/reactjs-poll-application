@@ -1,0 +1,15 @@
+.homeNavbarContainer{
+    font-size: 17px;
+}
+
+.ui.inverted.menu{
+    border-bottom : 1px solid rgba(83, 87, 83, 0.5)
+}
+
+.ui.secondary.inverted.menu .item{
+    margin: 10px;
+
+}
+.ui.secondary.menu .item:hover{
+    margin: 10px;
+}

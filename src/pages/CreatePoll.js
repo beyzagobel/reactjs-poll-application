@@ -60,7 +60,7 @@ export default function CreatePoll() {
             )}
           </div>
           <button
-            className="ui violet button"
+            className="ui button add"
             onClick={handleAddAnswerOption}
             style={{ marginBottom: "20px" }}
           >

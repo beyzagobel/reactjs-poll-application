@@ -15,7 +15,11 @@ function HomeNavbar() {
   return (
     <Menu inverted secondary size="massive">
       <Container className="homeNavbarContainer">
-        <Menu.Item active={activeItem === "Home"} onClick={handleItemClick}>
+        <Menu.Item
+          name="home"
+          active={activeItem === "home"}
+          onClick={handleItemClick}
+        >
           <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item
@@ -34,6 +38,7 @@ function HomeNavbar() {
         </Menu.Item>
         <Menu.Menu position="right">
           <Dropdown
+            className="user"
             item
             text="Beyza Göbel"
             active={activeItem === "dashboard"}

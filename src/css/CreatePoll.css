@@ -2,11 +2,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    background-color: #282B33;
+    background-color: #25272E;
 }
 
 .ui.olive.segment:not(.inverted){
-    border-top: 4px solid #B15DFF!important ;
+    border-top: 4px solid #ff0266!important ;
     padding: 30px;
 
 }
@@ -27,7 +27,7 @@
 }
 
 .ui.inverted.form input[type=text]{
-    background-color: #374151;
+    background-color: #383B44;
     color: white;
     border-color:#374151 ;
 
@@ -38,13 +38,13 @@
   }
 
   .ui.button.createPoll{
-    background-color: #03DAC6;
+    background-color:#2f2fd5;
     color: white;
   }
 
 
   .ui.button.x{
-    background-color: #374151;
+    background-color: #383B44;
     color: white;
     margin: initial;  
   }
@@ -57,4 +57,9 @@
     transition: 0.5s;
     outline: none;
     border-radius: 1px;
+  }
+
+
+  .ui.button.add{
+    background-color: #03dac5;
   }

@@ -2,7 +2,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    background-color: #25272E;
+    background-color: rgb(34,36,38,.15);
+	  border: 2px solid rgba(55, 57, 59, 0.15);
 }
 
 .ui.olive.segment:not(.inverted){
@@ -18,7 +19,7 @@
 
 
 .createPollContainer{
-    width: 1000px;
+  width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -27,13 +28,19 @@
 }
 
 .ui.inverted.form input[type=text]{
-    background-color: #383B44;
+    background-color: #393a3f;
     color: white;
-    border-color:#374151 ;
-
-   
 }
 .ui.inverted.form input[type=text]:focus {
+    border: 1px solid #B15DFF;
+  }
+
+  .ui.inverted.form input[type=password]{
+    background-color: #383B44;
+    color: white;
+    margin-bottom: 10px;
+}
+.ui.inverted.form input[type=password]:focus {
     border: 1px solid #B15DFF;
   }
 

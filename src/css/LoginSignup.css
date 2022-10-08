@@ -1,18 +1,22 @@
 .authContainer{
-	width: 900px;
+	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 	max-width: 100%;
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
+.ui[class*="left aligned"].segment{
+	padding: 40px;
+	background-color: rgb(34,36,38,.15);
+	border: 1px solid rgba(55, 57, 59, 0.15);
 
-.signup{
+}
+
+h1{
 	margin-bottom: 2rem;
-}
-.base{
-	padding: 1.5rem;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .ui.grid>.column:not(.row){

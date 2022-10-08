@@ -1,24 +1,21 @@
-.homeNavbarContainer{
-    font-size: 17px;
-}
 
 .ui.inverted.menu{
-    border-bottom : 1px solid rgba(83, 87, 83, 0.5);
-    margin-bottom: auto;
+    font-size: 15px;
 }
-
-.ui.secondary.inverted.menu .item{
-    margin: 10px;
-}
-
-
-.ui.secondary.menu .item:hover{
-    margin: 10px;
-}
-
-
 .ui.item.dropdown.user{
     background: rgba(255,255,255,.15);
 }
 
 
+.ui.inverted.secondary.menu{
+    margin: 0px;
+    padding: 0px;
+}
+
+.u,.container{
+    height: 50px;
+}
+
+.ui.inverted.segment, .ui.primary.inverted.segment{
+    padding: 10px;
+}

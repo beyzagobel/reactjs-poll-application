@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import "../css/CreatePoll.css";
+import CreatePollRequest from "../model/createPollRequest";
+import PollService from "../service/PollService";
+import SweetAlert from "../util/SweetAlert";
+import { useNavigate } from "react-router-dom";
+import { usePoll } from "../context/PollContext";
+import { useAuth } from "../context/AuthContext";
 
 export default function CreatePoll() {
   const [counter, setCounter] = useState(1);
+  const { setPoll } = usePoll();
+  const { user } = useAuth();
+
+  const navigate = useNavigate();
 
   const handleAddAnswerOption = (event) => {
     event.preventDefault();
@@ -15,8 +25,30 @@ export default function CreatePoll() {
     }
   };
 
+  const handleCreatePoll = (event) => {
+    event.preventDefault();
+    let data = Object.fromEntries(new FormData(event.target));
+    let tempOptions = Object.values(data)
+      .slice(1)
+      .map((i) => {
+        return { option: i };
+      });
+
+    const req = new CreatePollRequest(data.question, tempOptions, user.userId);
+    PollService.create(req, (res) => {
+      if (res.data) {
+        setPoll(res.data);
+        SweetAlert.success("Create poll Successfull");
+        navigate("/polls");
+      } else {
+        SweetAlert.info("Lütfen Bilgilerinizi Kontrol Ediniz!");
+      }
+    });
+  }
+
   return (
-    <div className="createPollContainer">
+    <form onSubmit={handleCreatePoll}>
+  <div className="createPollContainer">
       <div className="ui olive stacked left aligned segment">
         <form className="ui inverted form">
           <div className="field">
@@ -68,9 +100,11 @@ export default function CreatePoll() {
           </button>
           <div class="ui section divider"></div>
 
-          <button className="ui fluid button createPoll">Create poll</button>
+          <button className="ui fluid button createPoll" type="submit">Create poll</button>
         </form>
       </div>
     </div>
+    </form>
+  
   );
 }

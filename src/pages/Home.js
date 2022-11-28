@@ -9,6 +9,7 @@ export default function Home() {
     navigate("/create");
   };
 
+  //kjdbjx
   return (
     <div>
       {/* <img src={} className="image" /> */}
